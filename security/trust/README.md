@@ -122,7 +122,7 @@ In this step you will enable Docker Content Trust, sign images as you push them,
 
    > **Note:** If you are using `sudo` with your Docker commands, you will need to preceded the above command so that it looks like this`sudo export DOCKER_CONTENT_TRUST=1`
 
-   It is worth nothing that although Docker Content Trust is now enabled, all Docker commands remain the same. Docker Content Trust will work silently in the background.
+   It is worth noting that although Docker Content Trust is now enabled, all Docker commands remain the same. Docker Content Trust will work silently in the background.
 
 2. Pull the `riyaz/dockercon:trust` signed image.
 
@@ -407,7 +407,7 @@ Now we'll explore delegation roles in notary. Delegation roles are a subset of t
 
    This command will allow the collaborator to push any target (from `--all-paths`) to the `targets/releases` role if they can sign with their private key `delegation.key` in order to produce a valid signature that can be verified by `delegation.crt`'s public key material.
 
-   Be aware that this commmand only stages the delegation role addition.
+   Be aware that this command only stages the delegation role addition.
 
 5. Publish the addition of the delegation role
 
